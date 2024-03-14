@@ -1,3 +1,5 @@
+----- Let's Joy Cafe -----
+
 -- Created Table
 CREATE TABLE menus (
   MenuId int,
