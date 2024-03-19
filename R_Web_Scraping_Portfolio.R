@@ -2,29 +2,29 @@
 
 library(rvest)
 
-url_imdb <- "https://www.netflix.com/tudum/top10?week=2023-10-29%2F"
+url_netflix <- "https://www.netflix.com/tudum/top10?week=2023-10-29%2F"
 
-movie_name <- url_imdb %>%
+movie_name <- url_netflix %>%
   read_html() %>%
   html_elements("td.pb-2.tbl-cell.tbl-cell-name") %>%
   html_text2()
 
-weeks <- url_imdb %>%
+weeks <- url_netflix %>%
   read_html() %>%
   html_elements("span.wk-number") %>%
   html_text2()
 
-hr_views <- url_imdb %>%
+hr_views <- url_netflix %>%
   read_html() %>%
   html_elements("td.pb-2.tbl-cell.tbl-cell-hours ") %>%
   html_text2()
 
-runtimes <- url_imdb %>%
+runtimes <- url_netflix %>%
   read_html() %>%
   html_elements("td.pb-2.tbl-cell.tbl-cell-runtime ") %>%
   html_text2()
 
-views <- url_imdb %>%
+views <- url_netflix %>%
   read_html() %>%
   html_elements("td.pb-2.tbl-cell.tbl-cell-vhor ") %>%
   html_text2()
