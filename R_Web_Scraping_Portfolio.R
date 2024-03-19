@@ -1,6 +1,5 @@
 ## Created a dataframe for top 10 most popular movies on netflix in thailand (18 - 24 March 2024) from www.netflix.com
 
-library(tidyverse)
 library(rvest)
 
 url_imdb <- "https://www.netflix.com/tudum/top10?week=2023-10-29%2F"
