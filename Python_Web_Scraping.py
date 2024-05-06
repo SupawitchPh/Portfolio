@@ -17,8 +17,7 @@ songs_name = [song.strip() for song in songs]
 artists = billboard.find("span", {"class": "c-label  a-no-trucate"})
 artists_name = [artist.strip() for artist in artists]
 
-numbers = [num for num in range(1, 201)]
-print(numbers)
+numbers = list(range(1, 201))
 
 df = pd.DataFrame({
     "Rank": numbers,
