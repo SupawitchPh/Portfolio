@@ -1,3 +1,5 @@
+# Import Top 200 Music Billboard Global on billboard.com to create dataframe.
+
 !pip install gazpacho
 
 import requests as re
